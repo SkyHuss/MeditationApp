@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700;800&display=swap');
+
+.splach-content{
+    position: relative;
+    background-image: url("../../assets/27528111.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.splach-content img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: logoGrowth; 
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    transition: top 350ms ease-in-out;
+}
+
+@keyframes logoGrowth {
+    from{width: 300px;}
+    to{width: 350px;}
+}
+
+.splach-content .splach-text 
+{
+    font-family: Alegreya;
+    color: white;
+    text-align: center;
+}
+
+.splach-content .splach-text h1{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 150%;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.splach-content .splach-text p{
+    position: absolute;
+    top: 62%;
+    left: -150%;
+    transform: translate(-50%, -50%);
+    font-family: Alegreya Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 240px;
+
+}
+
+.splach-content .splach-connexion{
+    font-family: Alegreya;
+    position: absolute;
+    left: 50%;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+}
+
+.splach-content .splach-connexion .splach-login-button{
+    width: 320px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #7C9A92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.splach-content .splach-connexion .splach-login-button:hover
+{
+    cursor: pointer;
+    background-color: #909896;
+    transition: all 150ms ease-in-out;
+}
+
+
+.splach-content .splach-connexion .splach-create-account
+{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.splach-content .splach-connexion .splach-create-account a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+/* When screen is clicked*/ 
+.splach-content.active img{
+    top: 35%;
+}
+
+.splach-content.active .splach-text h1, .splach-content.active .splach-text p{
+    left: 50%;
+    transition: all 500ms ease-in-out;
+}
+
+.splach-content.active .splach-connexion
+{
+    top: 87%;
+    transition: all 500ms ease-in-out;
+}
