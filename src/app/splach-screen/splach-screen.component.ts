@@ -19,5 +19,4 @@ export class SplachScreenComponent implements OnInit {
       element.classList.add("active");
     }
   }
-
 }
