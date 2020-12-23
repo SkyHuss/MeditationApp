@@ -81,6 +81,8 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
+    text-decoration: none;
+    color: #FFF;
 }
 
 .splach-content .splach-connexion .splach-login-button:hover
