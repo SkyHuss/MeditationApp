@@ -5,9 +5,9 @@ import { RegisterScreenComponent } from './register-screen/register-screen.compo
 import { SplachScreenComponent } from './splach-screen/splach-screen.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginScreenComponent },
-  { path: 'register', component: RegisterScreenComponent },
-  { path: '', component: SplachScreenComponent }
+  { path: 'login', component: LoginScreenComponent, data: {animation: 'Login'} },
+  { path: 'register', component: RegisterScreenComponent, data: {animation: 'Register'} },
+  { path: '', component: SplachScreenComponent, data: {animation: 'Splach'} }
 ];
 
 @NgModule({
